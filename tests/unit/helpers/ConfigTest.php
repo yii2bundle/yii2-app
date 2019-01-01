@@ -11,7 +11,7 @@ use yii2lab\test\helpers\DataHelper;
 class ConfigTest extends Unit
 {
 	
-	const PACKAGE = 'yii2lab/yii2-app';
+	const PACKAGE = 'yii2bundle/yii2-app';
 	
 	public function testLoadEnv()
 	{

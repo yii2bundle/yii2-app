@@ -10,7 +10,7 @@ use yii2lab\app\domain\filters\config\LoadRouteConfig;
 
 return [
 	/*'yii' => [
-		'class' => VENDOR_DIR . DS . 'yii2lab/yii2-domain/src/yii2' . DS . 'Yii.php',
+		'class' => VENDOR_DIR . DS . 'yii2bundle/yii2-domain/src/yii2' . DS . 'Yii.php',
 	],*/
 	'app' => [
 		'commands' => [

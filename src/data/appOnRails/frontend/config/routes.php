@@ -1,0 +1,10 @@
+<?php
+
+return [
+	'' => 'welcome',
+	
+	'@import' => [
+	
+	],
+	
+];

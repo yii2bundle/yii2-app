@@ -25,11 +25,11 @@ class ConfigTest extends Unit
 	
 	public function testEnvGetDefinition()
 	{
-		$definitionGenerated = Env::getDefinition('vendor/yii2lab/yii2-app/tests/_application_test');
+		$definitionGenerated = Env::getDefinition('vendor/yii2bundle/yii2-app/tests/_application_test');
 		$expected = DataHelper::loadForTest(self::PACKAGE, __METHOD__, $definitionGenerated);
 		$this->tester->assertEquals($expected, $definitionGenerated);
 		
-		$definitionGenerated = Env::getDefinition(['vendor/yii2lab/yii2-app/tests/_application_test']);
+		$definitionGenerated = Env::getDefinition(['vendor/yii2bundle/yii2-app/tests/_application_test']);
 		$this->tester->assertEquals($expected, $definitionGenerated);
 	}
 	

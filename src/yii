@@ -15,7 +15,7 @@ $domainAlias = Select::display('Select domain', [
 $domainAlias = ArrayHelper::first($domainAlias);
 
 if($domainAlias == 'native') {
-	$sourceDir = 'vendor/yii2lab/yii2-app/src/data/nativeAppOnRails';
+	$sourceDir = 'vendor/yii2bundle/yii2-app/src/data/nativeAppOnRails';
 	$forCopy = [
 		'backend' => [
 			'backend',
@@ -40,7 +40,7 @@ if($domainAlias == 'native') {
 	];
 }
 if($domainAlias == 'clean') {
-	$sourceDir = 'vendor/yii2lab/yii2-app/src/data/appOnRails';
+	$sourceDir = 'vendor/yii2bundle/yii2-app/src/data/appOnRails';
 	$forCopy = [
 		'api' => [
 			'api',

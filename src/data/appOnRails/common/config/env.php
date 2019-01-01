@@ -145,7 +145,7 @@ return [
 				'class' => 'yii2lab\db\domain\filters\migration\SetPath',
 				'path' => [
 					'@vendor/yii2lab/yii2-rbac/src/domain/migrations',
-					'@vendor/yii2module/yii2-account/src/domain/v2/migrations',
+					'@vendor/yii2bundle/yii2-account/src/domain/v2/migrations',
 					'@vendor/yiisoft/yii2/log/migrations',
                     '@vendor/yii2lab/yii2-rest/src/domain/migrations',
 				],

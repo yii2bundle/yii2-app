@@ -3,11 +3,11 @@
 		"commands": [
 			{
 				"class": "yii2lab\\app\\domain\\commands\\RunBootstrap",
-				"app": "vendor/yii2lab/yii2-app/tests/_application_test\\common"
+				"app": "vendor/yii2bundle/yii2-app/tests/_application_test\\common"
 			},
 			{
 				"class": "yii2lab\\app\\domain\\commands\\RunBootstrap",
-				"app": "vendor/yii2lab/yii2-app/tests/_application_test\\console"
+				"app": "vendor/yii2bundle/yii2-app/tests/_application_test\\console"
 			},
 			{
 				"class": "yii2lab\\app\\domain\\commands\\ApiVersion",
@@ -19,82 +19,82 @@
 		"filters": [
 			{
 				"class": "yii2lab\\app\\domain\\filters\\config\\LoadConfig",
-				"app": "vendor/yii2lab/yii2-app/tests/_application_test\\common",
+				"app": "vendor/yii2bundle/yii2-app/tests/_application_test\\common",
 				"name": "main",
 				"withLocal": true
 			},
 			{
 				"class": "yii2lab\\app\\domain\\filters\\config\\LoadConfig",
-				"app": "vendor/yii2lab/yii2-app/tests/_application_test\\console",
+				"app": "vendor/yii2bundle/yii2-app/tests/_application_test\\console",
 				"name": "main",
 				"withLocal": true
 			},
 			{
 				"class": "yii2lab\\app\\domain\\filters\\config\\LoadModuleConfig",
-				"app": "vendor/yii2lab/yii2-app/tests/_application_test\\common",
+				"app": "vendor/yii2bundle/yii2-app/tests/_application_test\\common",
 				"name": "modules",
 				"withLocal": true
 			},
 			{
 				"class": "yii2lab\\app\\domain\\filters\\config\\LoadModuleConfig",
-				"app": "vendor/yii2lab/yii2-app/tests/_application_test\\console",
+				"app": "vendor/yii2bundle/yii2-app/tests/_application_test\\console",
 				"name": "modules",
 				"withLocal": true
 			},
 			{
 				"class": "yii2lab\\app\\domain\\filters\\config\\LoadConfig",
-				"app": "vendor/yii2lab/yii2-app/tests/_application_test\\common",
+				"app": "vendor/yii2bundle/yii2-app/tests/_application_test\\common",
 				"name": "routes",
 				"withLocal": true,
 				"assignTo": "components.urlManager.rules"
 			},
 			{
 				"class": "yii2lab\\app\\domain\\filters\\config\\LoadConfig",
-				"app": "vendor/yii2lab/yii2-app/tests/_application_test\\console",
+				"app": "vendor/yii2bundle/yii2-app/tests/_application_test\\console",
 				"name": "routes",
 				"withLocal": true,
 				"assignTo": "components.urlManager.rules"
 			},
 			{
 				"class": "yii2lab\\app\\domain\\filters\\config\\LoadConfig",
-				"app": "vendor/yii2lab/yii2-app/tests/_application_test\\common",
+				"app": "vendor/yii2bundle/yii2-app/tests/_application_test\\common",
 				"name": "params",
 				"withLocal": true,
 				"assignTo": "params"
 			},
 			{
 				"class": "yii2lab\\app\\domain\\filters\\config\\LoadConfig",
-				"app": "vendor/yii2lab/yii2-app/tests/_application_test\\console",
+				"app": "vendor/yii2bundle/yii2-app/tests/_application_test\\console",
 				"name": "params",
 				"withLocal": true,
 				"assignTo": "params"
 			},
 			{
 				"class": "yii2lab\\domain\\filters\\LoadDomainConfig",
-				"app": "vendor/yii2lab/yii2-app/tests/_application_test\\common",
+				"app": "vendor/yii2bundle/yii2-app/tests/_application_test\\common",
 				"name": "domains",
 				"withLocal": true
 			},
 			{
 				"class": "yii2lab\\app\\domain\\filters\\config\\LoadConfig",
-				"app": "vendor/yii2lab/yii2-app/tests/_application_test\\common",
+				"app": "vendor/yii2bundle/yii2-app/tests/_application_test\\common",
 				"name": "install"
 			},
 			{
 				"class": "yii2lab\\app\\domain\\filters\\config\\LoadConfig",
-				"app": "vendor/yii2lab/yii2-app/tests/_application_test\\console",
+				"app": "vendor/yii2bundle/yii2-app/tests/_application_test\\console",
 				"name": "install"
 			},
 			{
 				"class": "yii2lab\\app\\domain\\filters\\config\\LoadConfig",
-				"app": "vendor/yii2lab/yii2-app/tests/_application_test\\common",
+				"app": "vendor/yii2bundle/yii2-app/tests/_application_test\\common",
 				"name": "test",
 				"withLocal": true,
 				"isEnabled": true
 			},
 			{
 				"class": "yii2lab\\app\\domain\\filters\\config\\LoadConfig",
-				"app": "vendor/yii2lab/yii2-app/tests/_application_test\\console",
+				"app": "vendor/yii2bundle/yii2-app/tests/_application_test\\console",
 				"name": "test",
 				"withLocal": true,
 				"isEnabled": true

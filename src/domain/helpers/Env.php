@@ -20,7 +20,7 @@ class Env extends BaseRegistry {
 
 	public static function getDefinition($projectDir) {
 		$projectDirs = ArrayHelper::toArray($projectDir);
-		$projectDirs[] = 'vendor/yii2lab/yii2-app/src/application';
+		$projectDirs[] = 'vendor/yii2bundle/yii2-app/src/application';
 		$paths = [];
 		foreach($projectDirs as $dir) {
 			$paths[] = self::initItem($dir);

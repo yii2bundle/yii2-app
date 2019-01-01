@@ -53,10 +53,10 @@ return [
             [
                 'class' => 'yii2lab\db\domain\filters\migration\SetPath',
                 'path' => [
-                    '@vendor/yii2module/yii2-account/src/domain/v2/migrations',
-                    '@vendor/yii2module/yii2-profile/src/domain/v2/migrations',
-                    '@vendor/yii2module/yii2-article/src/domain/migrations',
-                    '@vendor/yii2module/yii2-rest-client/src/migrations',
+                    '@vendor/yii2bundle/yii2-account/src/domain/v2/migrations',
+                    '@vendor/yii2bundle/yii2-profile/src/domain/v2/migrations',
+                    '@vendor/yii2bundle/yii2-article/src/domain/migrations',
+                    '@vendor/yii2bundle/yii2-rest-client/src/migrations',
                     '@vendor/yii2lab/yii2-qr/src/domain/migrations',
                     '@vendor/yii2lab/yii2-geo/src/domain/migrations',
                     //'@vendor/yii2lab/yii2-notify/src/migrations',

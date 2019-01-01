@@ -15,7 +15,7 @@ composer require yii2lab/yii2-app
 $name = 'frontend';
 $path = '../..';
 
-@include_once(__DIR__ . '/' . $path . '/vendor/yii2lab/yii2-app/src/App.php');
+@include_once(__DIR__ . '/' . $path . '/vendor/yii2bundle/yii2-app/src/App.php');
 
 if(!class_exists(App::class)) {
 	die('Run composer install');
@@ -33,7 +33,7 @@ $name = 'frontend';
 $path = '../..';
 defined('YII_ENV') || define('YII_ENV', 'test');
 
-@include_once(__DIR__ . '/' . $path . '/vendor/yii2lab/yii2-app/src/App.php');
+@include_once(__DIR__ . '/' . $path . '/vendor/yii2bundle/yii2-app/src/App.php');
 
 if(!class_exists(App::class)) {
 	die('Run composer install');
@@ -51,7 +51,7 @@ $name = 'frontend';
 $path = '../..';
 defined('YII_ENV') || define('YII_ENV', 'test');
 
-@include_once(__DIR__ . '/' . $path . '/vendor/yii2lab/yii2-app/src/App.php');
+@include_once(__DIR__ . '/' . $path . '/vendor/yii2bundle/yii2-app/src/App.php');
 
 if(!class_exists(App::class)) {
 	die('Run composer install');
@@ -69,7 +69,7 @@ App::init($name);
 $name = 'console';
 $path = '.';
 
-@include_once(__DIR__ . '/' . $path . '/vendor/yii2lab/yii2-app/src/App.php');
+@include_once(__DIR__ . '/' . $path . '/vendor/yii2bundle/yii2-app/src/App.php');
 
 if(!class_exists(App::class)) {
 	die('Run composer install');
@@ -88,7 +88,7 @@ $name = 'console';
 $path = '.';
 defined('YII_ENV') || define('YII_ENV', 'test');
 
-@include_once(__DIR__ . '/' . $path . '/vendor/yii2lab/yii2-app/src/App.php');
+@include_once(__DIR__ . '/' . $path . '/vendor/yii2bundle/yii2-app/src/App.php');
 
 if(!class_exists(App::class)) {
 	die('Run composer install');

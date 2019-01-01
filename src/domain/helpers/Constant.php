@@ -90,7 +90,7 @@ class Constant {
 		defined('CONSOLE_DIR') OR define('CONSOLE_DIR', ROOT_DIR . DS . CONSOLE);
 		defined('VENDOR_DIR') OR define('VENDOR_DIR', ROOT_DIR . DS . VENDOR);
 		defined('DOMAIN_DIR') OR define('DOMAIN_DIR', ROOT_DIR . DS . DOMAIN);
-		defined('TEST_APPLICATION_DIR') OR define('TEST_APPLICATION_DIR', 'vendor/yii2lab/yii2-test/src/base/_application');
+		defined('TEST_APPLICATION_DIR') OR define('TEST_APPLICATION_DIR', 'vendor/yii2bundle/yii2-test/src/base/_application');
 	}
 	
 	private static function getRootDir() {

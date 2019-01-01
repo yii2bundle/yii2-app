@@ -6,7 +6,7 @@ $config = [
 	API_VERSION_STRING => 'dashboard/default/index',
 	
 	'@import' => [
-		'vendor/yii2lab/yii2-rest/src/api',
+		'vendor/yii2bundle/yii2-rest/src/api',
 	],
 ];
 

@@ -1,4 +1,4 @@
 @echo off
-cd ..\..
-php yii vendor/test/project
+cd ..\..\vendor\yii2bundle\yii2-vendor\bin
+php bin test/project
 pause

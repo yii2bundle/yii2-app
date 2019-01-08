@@ -29,12 +29,7 @@ function env($name, $default = null) {
 }
 
 function param($name, $default = null) {
-	$params = \Yii::$app->params;
-	$value = ArrayHelper::getValue($params, $name);
-	if($value === null) {
-		$value = $default;
-	}
-	return $value;
+	return Env::get('params' . DOT . $name, $default);
 }
 
 function prr($val, $exit = false, $forceToArray = false) {

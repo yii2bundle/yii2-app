@@ -50,7 +50,7 @@ return [
                     BACKEND,
                 ],
             ],*/
-            [
+            /*[
                 'class' => 'yii2lab\db\domain\filters\migration\SetPath',
                 'path' => [
                     '@vendor/yii2bundle/yii2-account/src/domain/v2/migrations',
@@ -64,7 +64,7 @@ return [
                 'scan' => [
                     '@domain',
                 ],
-            ],
+            ],*/
 		],
 	],
 	'config' => [

@@ -80,9 +80,9 @@ class App
 	
 	private static function runCommands($commands)
 	{
-		$commandCollection = ScenarioHelper::forgeCollection($commands);
 		try {
-			ScenarioHelper::runAll($commandCollection);
+			$filterCollection = new \yii2lab\extension\scenario\collections\ScenarioCollection($commands);
+			$filterCollection->runAll();
 		} catch(InvalidConfigException $e) {
 		} catch(ServerErrorHttpException $e) {
 		}

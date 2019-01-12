@@ -2,6 +2,7 @@
 
 namespace yii2lab\app\domain\helpers;
 
+use yii2lab\extension\scenario\collections\ScenarioCollection;
 use yii2lab\extension\scenario\helpers\ScenarioHelper;
 
 class Handler {
@@ -17,8 +18,8 @@ class Handler {
 	 * @throws \yii\web\ServerErrorHttpException
 	 */
 	public function run($data = []) {
-		$filterCollection = ScenarioHelper::forgeCollection($this->filters);
-		$data =  ScenarioHelper::runAll($filterCollection, $data);
+		$filterCollection = new ScenarioCollection($this->filters);
+		$data = $filterCollection->runAll($data);
 		return $data;
 	}
 	

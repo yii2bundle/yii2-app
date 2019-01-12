@@ -2,6 +2,7 @@
 
 namespace yii2lab\app\domain\helpers;
 
+use yii2lab\extension\scenario\collections\ScenarioCollection;
 use yii2lab\extension\scenario\helpers\ScenarioHelper;
 use yii2lab\extension\common\helpers\Helper;
 
@@ -16,13 +17,13 @@ class EnvLoader
 	 * @throws \yii\web\ServerErrorHttpException
 	 */
 	public static function run($definition) {
-		$filterCollection = ScenarioHelper::forgeCollection($definition['filters']);
-		$config = ScenarioHelper::runAll($filterCollection, []);
+		$filterCollection = new ScenarioCollection($definition['filters']);
+		$config = $filterCollection->runAll([]);
 		$definition['commands'] = Helper::assignAttributesForList($definition['commands'], [
 			'env' => $config,
 		]);
-		$commandCollection = ScenarioHelper::forgeCollection($definition['commands']);
-		ScenarioHelper::runAll($commandCollection);
+		$filterCollection = new ScenarioCollection($definition['commands']);
+		$filterCollection->runAll();
 		return $config;
 	}
 	

@@ -1,5 +1,7 @@
 <?php
 
+use yii2lab\app\domain\helpers\EnvService;
+
 return [
 	'bootstrap' => [],
 	'layout' => '@yii2lab/applicationTemplate/backend/views/layouts/main',
@@ -14,7 +16,7 @@ return [
 			'parsers' => [
 				'application/json' => 'yii\web\JsonParser',
 			],
-			'cookieValidationKey' => env('cookieValidationKey.backend'),
+			'cookieValidationKey' => EnvService::get('cookieValidationKey.backend'),
 		],
 		'session' => [
 			// this is the name of the session cookie used for login on the backend

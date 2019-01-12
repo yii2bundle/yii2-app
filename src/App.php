@@ -19,18 +19,6 @@ namespace {
 
 }
 
-namespace yii2lab\app {
-
-    /**
-     * Class App
-     * @package yii2lab\app
-     *
-     * @deprecated use \App
-     */
-    class App extends \yii2lab\app\parent\App {}
-
-}
-
 namespace yii2lab\app\parent {
 
     use yii\base\InvalidConfigException;

@@ -4,7 +4,7 @@ namespace yii2lab\app\domain\validators;
 
 use yii\db\ActiveRecord;
 use yii\validators\Validator;
-use yii2lab\app\domain\helpers\ConnectionHelper;
+use yii2lab\db\domain\helpers\ConnectionHelper;
 
 class ConnectionValidator extends Validator {
 
